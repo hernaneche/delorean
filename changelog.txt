@@ -3,3 +3,5 @@
 0.3- Bug fixed on _R(X) (used to work exactly as _RI(X)).
    - Improved example
    - Some translation
+
+0.4- Reduce namevar lenght to standarmax 31

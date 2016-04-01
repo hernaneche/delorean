@@ -35,9 +35,9 @@ so the code could be:
     if(functionE()!=0)
      {error management}
 
-But what if at error I wish to jump the other?
-and what if I wish to "retry" the one that fail?
-and of course, what if I also want the code to be clean and beautiful ?
+But what if I wish to skip at error ?  
+and what if I wish to "retry" the one that fail?  
+and of course, what if I also want the code to be clean and beautiful ?  
 
 this is another option of coding:
 
@@ -65,12 +65,9 @@ What about something like this...
         functionE();
     END_TEST
 
+Does it looks better?
 
-Does it looks nice?
-
-So you should take a look to Delorean.h 
-
-it's even more compact :
+So you should take a look to **delorean.h**, it's even more compact :
 
     TEST
         functionA() _
@@ -80,4 +77,4 @@ it's even more compact :
         functionE() _
     END_TEST
 
-enjoy"# delorean" 
+enjoy it

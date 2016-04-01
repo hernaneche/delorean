@@ -1,0 +1,5 @@
+0.2- Initial alpha
+
+0.3- Bug fixed on _R(X) (used to work exactly as _RI(X)).
+   - Improved example
+   - Some translation

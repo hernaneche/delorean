@@ -1,10 +1,7 @@
 //-------------------------------------------------------------
-//
 //SAME AS JSON LICENSE 
 //
-//
 //likeright (L) 2009  Hernan Echegoyemberry
-//
 //
 //Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 //
@@ -19,11 +16,10 @@
 #include"delorean.h"
 
 int main(void) {
-    			int err=0;
-    			
+    		
+    		int err=0;
                 TEST
                          //** ZONE OF ONLY FUNCTION CALLS HERE ** FUNCTIONS RETURNS =0 OK , !=0 ERR
-                    
                          err=doThis()	_                           
                          err=doThat()	_RI(2)
                          err=doOther()	_
@@ -31,21 +27,16 @@ int main(void) {
                          err=doThis()	_  
                                                   
                 DELOREAN     
-
-                		//OPTIONAL pure C/C++ code, also BACK / GOON magic keywords                                
-                		
+                	//OPTIONAL pure C/C++ code, also BACK / GOON magic keywords                                
                     	if(err!=0){
-						
-								printf(" catch zone !");
-                    	
-								GOON ;
-						}
-                    	
+				printf(" catch zone !");
+                    		GOON ;
+			}
                 END_TEST
         		
-				getchar();
+		getchar();
 				
-			    return 0;
+		return 0;
     
 }
 

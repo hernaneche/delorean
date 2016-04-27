@@ -70,7 +70,7 @@ What about something like this...
 Does it looks better?
 
 So you should take a look to **delorean.h**, it's even more compact :
-```Pascal
+```python
     TEST
         functionA() _
         functionB() _R(4);

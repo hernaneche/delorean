@@ -58,7 +58,7 @@ Mmmm but the code don't get any better at beauty, and furthermore I still can't 
 
 
 What about something like this...
-```C
+```python
     TEST
         functionA();
         functionB(); Repeat_If_Fail(4 times);

@@ -18,12 +18,13 @@ Do you call many successive functions in C language ?
 and do you want to check if those functions return OK or ERROR?
 
 let supose
-
+```C
     ==0 mean OK 
     !=0 mean ERROR
-
+```
 so the code could be:
 
+```C
     if(functionA()!=0)
      {error management}
     if(functionB()!=0)
@@ -34,13 +35,14 @@ so the code could be:
      {error management}
     if(functionE()!=0)
      {error management}
+```
 
 But what if I wish to skip at error ?  
 and what if I wish to "retry" the one that fail?  
 and of course, what if I also want the code to be clean and beautiful ?  
 
 this is another option of coding:
-
+```C
     do{
        if(functionA()!=0)  {error=1;break;}
        if(functionB()!=0)  {error=2;break;}
@@ -49,14 +51,14 @@ this is another option of coding:
        if(functionE()!=0)  {error=5;break;}
        break;
     }while(1)
-
+```
 {error management with a switch for example}
 
 Mmmm but the code don't get any better at beauty, and furthermore I still can't "retry" easily...
 
 
 What about something like this...
-
+```C
     TEST
         functionA();
         functionB(); Repeat_If_Fail(4 times);
@@ -64,11 +66,11 @@ What about something like this...
         functionD(); Jump_If_Fail();
         functionE();
     END_TEST
-
+```
 Does it looks better?
 
 So you should take a look to **delorean.h**, it's even more compact :
-
+```C
     TEST
         functionA() _
         functionB() _R(4);
@@ -76,5 +78,5 @@ So you should take a look to **delorean.h**, it's even more compact :
         functionD() _
         functionE() _
     END_TEST
-
+```
 enjoy it
